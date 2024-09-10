@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>room detail</title>
+</head>
+<body>
+    <h1>room {{ room.number }}</h1>
+    <p>type of room: {{ room.get_room_type_display }}</p>
+    <p>price per night : {{ room.price_per_night }}</p>
+    <p>description: {{ room.description }}</p>
+    <img src="{{ room.photo.url }}" alt="">
+</body>
+</html>

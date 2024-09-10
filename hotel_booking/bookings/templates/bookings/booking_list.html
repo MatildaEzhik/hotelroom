@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>booking list</title>
+</head>
+<body>
+    <h1>own bookings</h1>
+    <ul>
+        {% for booking in bookings %}
+            <li>
+                <a href="{% url 'booking_detail' booking.pk %}">
+                    room {{ booking.room.number }} from {{ booking.check_in_date }} to {{ booking.check_out_date }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

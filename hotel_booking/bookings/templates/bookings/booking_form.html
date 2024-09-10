@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>booking form</title>
+</head>
+<body>
+    <h1>booking form</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">booking</button>
+    </form>
+</body>
+</html>

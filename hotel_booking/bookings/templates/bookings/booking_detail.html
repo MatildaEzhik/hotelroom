@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>booking detail</title>
+</head>
+<body>
+    <h1>booking detail</h1>
+    <p>room number: {{ booking.room.number }}</p>
+    <p>check-in date: {{ booking.check_in_date }}</p>
+    <p>Check-out date: {{ booking.check_out_date }}</p>
+    <p>users:</p>
+    <ul>
+        {% for user in booking.users.all %}
+            <li>{{ user.username }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
